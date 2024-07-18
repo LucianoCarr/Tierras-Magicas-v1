@@ -1,0 +1,28 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-body {
+    display: flex;
+    flex-wrap: wrap;
+    width: 25%;
+    padding: 14px;
+}
+
+.card {
+    display: flex;
+    text-align: center;
+}
+
+.card img {
+    height: 58%;
+}
+
+.see-more {
+    color: blue;
+    text-align: center;
+    font-family: cursive;
+    border: 0;
+    background-color: white;
+}
