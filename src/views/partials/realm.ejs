@@ -1,0 +1,15 @@
+<h1>Reinos</h1>
+<div class="container">
+   <% realms.forEach(realm => { %>
+       <div class="card-body">
+           <div class="card">
+               <h3><%= realm.reino %></h3>
+               <% if (realm.image.startsWith('http')) { %>
+                <img src="<%= realm.image %>" alt="<%= realm.name %>">
+            <% } else { %>
+                <img src="/img/<%= realm.image || 'tierras-magicas.jpg' %>" alt="<%= realm.name %>">
+            <% } %>
+           </div>
+       </div>
+   <% }) %>
+</div>

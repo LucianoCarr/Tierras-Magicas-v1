@@ -1,0 +1,44 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-body {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 25%;
+    padding: 14px;
+}
+
+.card {
+    display: flex;
+    text-align: center;
+    background-image: url(https://i.pinimg.com/736x/03/f3/d7/03f3d79cb6edd982345dee0efc43d315.jpg);
+    background-position-y: center;
+}
+
+.card h2 {
+    font-family: var(--tipografia2);
+}
+
+.card img {
+    height: 85%;
+    background-color: white;
+}
+
+.card h6 {
+    font-family: var(--tipografia);
+}
+
+.card p {
+    font-family: var(--tipografia3);
+}
+
+.see-more {
+    color: blue;
+    text-align: center;
+    font-family: cursive;
+    border: 0;
+   background-image: url(https://i.pinimg.com/736x/03/f3/d7/03f3d79cb6edd982345dee0efc43d315.jpg);
+   background-position-y: center;
+}

@@ -1024,5 +1024,14 @@
     "image": "",
     "power": 20,
     "description": "No hay descipcion disponible"
+  },
+  {
+    "id": 115,
+    "name": "Slash",
+    "realm": "Reino Nigromante",
+    "power": 23,
+    "element": "Aire",
+    "description": "No hay descipcion disponible",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5V_eroUaZ1SW-Hp2HfBSQB8zgeyPS0MQoeaZEbP7QQ2_Wqg9zZz42vLey3Qo-9lpoO8M&usqp=CAU"
   }
 ]
