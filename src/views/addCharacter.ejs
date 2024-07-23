@@ -9,16 +9,17 @@
     <h1>Creacion de Personaje</h1>
     <form action="/character/add" method="POST" enctype="multipart/form-data">
         <div>
+            <!-- nombre -->
             <div>
                 <label for="name">Nombre:</label>
                 <input type="text" id="name" name="name" placeholder="Nombre">
             </div>
-            <!-- nombre -->
+            <!-- reino -->
             <div>
                 <label for="realm">Reino:</label>
                 <input type="text" id="realm" name="realm" placeholder="Reino">
             </div>
-            <!-- reino -->
+            <!-- poder -->
             <div>
                 <label for="power">Poder:</label>
                 <input type="number" id="power" name="power" placeholder="Poder">
@@ -36,7 +37,8 @@
             <!-- descripcion -->
              <div>
                 <label for="description">Descripcion:</label>
-                <input type="text" id="description" name="description" placeholder="Description">
+                <br>
+                <textarea name="description" id="description" cols="60" rows="5" placeholder="Descripcion del personaje"></textarea>
             </div>
             <!-- imagen -->
             <div>
@@ -53,5 +55,7 @@
             </div>
         </div>
     </form>
+
+    <%- include('partials/footer') %>
 </body>
 </html>

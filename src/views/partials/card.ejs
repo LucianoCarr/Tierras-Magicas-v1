@@ -2,6 +2,7 @@
     <% characters.forEach(character => { %>
 <div class="card-body">
     <div class="card">
+        <a href="/character/edit/<%= character.id %>">Editar</a>
         <h2><%= character.name %></h2>
         <% if (character.image.startsWith('http')) { %>
             <img src="<%= character.image %>" alt="<%= character.name %>">
@@ -18,3 +19,7 @@
     <% }) %>
 </div>
 
+
+<!-- <form action="/character/edit/<%= //character.id %>">
+    
+</form> -->

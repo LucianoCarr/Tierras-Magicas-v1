@@ -21,9 +21,17 @@
     font-family: var(--tipografia2);
 }
 
+.card hr {
+    width: 80%;
+    align-self: center;
+    border: black solid 1px;
+    margin: 4px;
+}
+
 .card img {
     height: 85%;
     background-color: white;
+    mix-blend-mode: color-burn;
 }
 
 .card h6 {

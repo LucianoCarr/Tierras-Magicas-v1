@@ -6,6 +6,83 @@
       }) %>
       
 <body>
-    <h1>EDITARRRR</h1>
+    <h1>EDITAR</h1>
+    <div class="edit-view">
+      <div class="card-body">
+        <div class="card">
+          <h2><%= character.name %></h2>
+          <% if (character.image.startsWith('http')) { %>
+          <img src="<%= character.image %>" alt="<%= character.name %>" />
+          <% } else { %>
+          <img
+            src="/img/<%= character.image || 'tierras-magicas.jpg' %>"
+            alt="<%= character.name %>"
+          />
+          <% } %>
+          <h6><%= character.realm %></h6>
+          <p>Puntos: <%= character.power %></p>
+          <p>Elemento: <%= character.element %></p>
+          <p class="card-text">Descripción: <%= character.description %></p>
+        </div>
+      </div>
+   
+      <form class="edit-form" action="/character/edit/<%= character.id %>?_method=PUT" method="POST" enctype="multipart/form-data">
+        <h1>Informacion</h1>
+        <div>
+            <!-- nombre -->
+            <div>
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" value="<%= character.name %>">
+            </div>
+            <!-- reino -->
+            <div>
+                <label for="realm">Reino:</label>
+                <input type="text" id="realm" name="realm" value="<%= character.realm %>">
+            </div>
+            <!-- poder -->
+            <div>
+                <label for="power">Poder:</label>
+                <input type="number" id="power" name="power" value="<%= character.power %>">
+            </div>
+            <!-- elemento -->
+             <div>
+                <label for="element">Elemento:</label>
+                <select name="element" id="element">
+                    <option value="<%= character.element %>" hidden> <%= character.element %> </option>
+                    <option value="Agua">Agua</option>
+                    <option value="Tierra">Tierra</option>
+                    <option value="Fuego">Fuego</option>
+                    <option value="Aire">Aire</option>
+                </select>
+            </div>
+            <!-- descripcion -->
+             <div>
+                <label for="description">Descripcion:</label>
+                <br>
+                <textarea name="description" id="description" cols="60" rows="5"><%= character.description %></textarea>
+            </div>
+            <!-- imagen -->
+            <div>
+                <label for="image">URL de la imagen:</label>
+                <input type="text" id="image" name="image" placeholder="Arrastrar Aqui">
+                <h3>Arrastrala si quieres la misma imagen</h3>
+            </div>
+            <div>
+                <% if (character.image.startsWith('http')) { %>
+                    <img src="<%= character.image %>" alt="<%= character.name %>" style="max-width: 100px;">
+                    <% } else { %>
+                        <img src="/img/<%= character.image %>" alt="<%= character.name %>" style="max-width: 100px;">
+                        <% } %>
+                    </div>
+                    <div>
+                        <label for="formFile">O subela Aqui</label>
+                        <input type="file" id="formFile" name="image">
+                    </div>
+            <div>
+                <button type="submit">Editar Personaje</button>
+            </div>
+        </div>
+    </form>
+</div>
 </body>
 </html>
