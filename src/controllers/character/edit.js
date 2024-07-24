@@ -1,53 +1,39 @@
-const fs = require('fs')
-const path = require('path')
-//const upload = require('../../middleWares/upload')
+const fs = require('fs');
+const path = require('path');
 
-const filePath = path.join(__dirname, '../../data/characters.json')
-const characters = JSON.parse(fs.readFileSync(filePath, 'utf-8'))
-
-//const {validationResult} = require('express-validator')
+const filePath = path.join(__dirname, '../../data/characters.json');
 
 module.exports = async (req, res) => {
     try {
-        //const errors = validationResult(req)
+        const characters = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
+        const { name, image, realm, element, power, description } = req.body;
 
-       // if (errors.isEmpty()) {
+        const editCharacter = characters.map(character => {
+            if (character.id === +req.params.id) {
+                character.name = name.trim();
+                character.image = req.file ? req.file.filename : character.image
+                character.realm = realm.trim();
+                character.power = +power;
+                character.element = element;
+                character.description = description.trim() || "No hay descipcion disponible";
 
-        const {name, image, realm, element, power, description} = req.body
-
-        let newCharacter = {
-            id: characters[characters.length - 1].id + 1,
-            name: name?.trim(),
-            //image: '',
-            realm: realm?.trim(),
-            power: +power,
-            element,
-            description: description?.trim() || "No hay descipcion disponible"
-        }
-        console.log(newCharacter);
-
-            if (image && (image.startsWith('http://') || image.startsWith('https://'))) {
-                newCharacter.image = image; // Utiliza la URL proporcionada
-            } else if (req.file) {
-                newCharacter.image = req.file.filename; // Utiliza la imagen cargada localmente
-            } else {
-                newCharacter.image = "tierras-magicas.jpg"; // Imagen por defecto si no se proporciona ninguna
+                if (character.image) {
+                    character.image = "";
+                }
+                if (req.file) {
+                    character.image = req.file.filename;
+                } else if (image && (image.startsWith('http://') || image.startsWith('https://'))) {
+                    character.image = image;
+                }
             }
-
-        characters.push(newCharacter)
-        
-        fs.writeFileSync(filePath, JSON.stringify(characters, null, 2), 'utf-8')
-
-        return res.redirect('/')
-
-  /* } else {
-        return res.redirect('addCharacter', {
-            errors:errors.mapped(),
-            old: req.body
+            return character;
         });
-   } */
 
+        fs.writeFileSync(filePath, JSON.stringify(editCharacter, null, 2), 'utf-8');
+
+        return res.redirect('/');
     } catch (error) {
-        console.log("Error al crear el producto:",error);
+        console.log("Error al editar el producto:", error);
+        res.status(500).send('Internal Server Error');
     }
-}
+};

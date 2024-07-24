@@ -29,7 +29,7 @@
 }
 
 .card img {
-    height: 85%;
+    /* max-height: 85%; */
     background-color: white;
     mix-blend-mode: color-burn;
 }

@@ -1,5 +1,5 @@
 const express = require('express')
-const {add, modify, all, create, edit, detail} = require('../controllers/characterController')
+const {add, modify, all, create, edit, detail, destroy} = require('../controllers/characterController')
 const router = express.Router()
 const upload = require('../middleWares/upload')
 
@@ -14,5 +14,6 @@ router.post('/add', upload.single('image'), create)
 router.get('/edit/:id', modify)
 router.put('/edit/:id', upload.single('image'), edit)
 //borrar
+router.delete('/delete/:id', destroy)
 
 module.exports = router

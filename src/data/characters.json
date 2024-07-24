@@ -1033,5 +1033,14 @@
     "element": "Aire",
     "description": "No hay descipcion disponible",
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5V_eroUaZ1SW-Hp2HfBSQB8zgeyPS0MQoeaZEbP7QQ2_Wqg9zZz42vLey3Qo-9lpoO8M&usqp=CAU"
+  },
+  {
+    "id": 116,
+    "name": "Agumon",
+    "realm": "Digimon",
+    "power": 20,
+    "element": "Aire",
+    "description": "nada",
+    "image": "tierras-magicas.jpg"
   }
 ]

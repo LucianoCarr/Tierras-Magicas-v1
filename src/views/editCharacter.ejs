@@ -64,8 +64,11 @@
             <!-- imagen -->
             <div>
                 <label for="image">URL de la imagen:</label>
-                <input type="text" id="image" name="image" placeholder="Arrastrar Aqui">
-                <h3>Arrastrala si quieres la misma imagen</h3>
+                <input type="text" id="image" name="image" placeholder="URL imagen">
+            </div>
+            <div>
+                <label for="defaultImage">Usar imagen por defecto:</label>
+                <input type="checkbox" id="defaultImage" name="defaultImage">
             </div>
             <div>
                 <% if (character.image.startsWith('http')) { %>
@@ -75,7 +78,7 @@
                         <% } %>
                     </div>
                     <div>
-                        <label for="formFile">O subela Aqui</label>
+                        <label for="formFile"></label>
                         <input type="file" id="formFile" name="image">
                     </div>
             <div>

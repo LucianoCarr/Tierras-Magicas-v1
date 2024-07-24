@@ -19,5 +19,6 @@ window.onload = function() {
       var descripcion = boton.parentNode.querySelector('.card-text');
       descripcion.style.maxHeight = '5px'; // Ajusta este valor según tu preferencia
       descripcion.style.overflow = 'hidden';
+      descripcion.style.transition = 'max-height 0.3s ease-out';
     });
   };
