@@ -3,3 +3,7 @@
     font-style: italic;
     font-size: 22px;
 }
+
+.card a img {
+    width: 100%;
+}

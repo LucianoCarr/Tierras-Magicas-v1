@@ -3,12 +3,12 @@
    <% realms.forEach(realm => { %>
        <div class="card-body">
            <div class="card">
-               <h3><%= realm.reino %></h3>
+            <a href="/realm/<%= realm.id %>"><h3><%= realm.name %></h3></a>
                <hr>
                <% if (realm.image.startsWith('http')) { %>
-                <img src="<%= realm.image %>" alt="<%= realm.name %>">
+                <a href="/realm/<%= realm.id %>"><img src="<%= realm.image %>" alt="<%= realm.name %>"></a>
             <% } else { %>
-                <img src="/img/<%= realm.image || 'tierras-magicas.jpg' %>" alt="<%= realm.name %>">
+                <a href="/realm/<%= realm.id %>"><img src="/img/<%= realm.image || 'tierras-magicas.jpg' %>" alt="<%= realm.name %>"></a>
             <% } %>
            </div>
        </div>

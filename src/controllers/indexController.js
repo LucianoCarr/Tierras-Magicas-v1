@@ -1,9 +1,46 @@
 const fs = require('fs')
 const path = require('path')
 
-const filePath = path.join(__dirname, '../data/realms.json')
+const filePathRealms = path.join(__dirname, '../data/realms.json')
+const filePathCharacters = path.join(__dirname, '../data/characters.json')
 
-module.exports = async (req, res) => {
+const controller = {
+    index: async (req, res) => {
+        try {
+            const realms = JSON.parse(fs.readFileSync(filePathRealms, 'utf-8'))
+    
+            return res.render('index', {
+                realms
+            })
+    
+        } catch (error) {
+            console.log(error);
+        }
+    },
+
+    realm: async (req, res) => {
+        try {
+            const characters = JSON.parse(fs.readFileSync(filePathCharacters, 'utf-8'));
+            const realms = JSON.parse(fs.readFileSync(filePathRealms, 'utf-8'));
+    
+            const realm = realms.find(realm => realm.id === +req.params.id);
+    
+            const charactersInRealm = characters.filter(character => character.realm === realm.name);
+
+    
+            return res.render('realmCharacter', {
+                realm,
+                charactersInRealm
+            });
+        } catch (error) {
+            console.log(error);
+        }
+    }
+}
+
+module.exports = controller
+
+/* module.exports = async (req, res) => {
     try {
         const realms = JSON.parse(fs.readFileSync(filePath, 'utf-8'))
 
@@ -15,5 +52,5 @@ module.exports = async (req, res) => {
         console.log(error);
     }
 }
-
+ */
 // demonio "https://ts2.mm.bing.net/th?q=tribal%20angel",

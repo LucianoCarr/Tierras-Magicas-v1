@@ -6,12 +6,21 @@
       }) %>
 
 <body>
-    <div class="dashboard">
-        <% characters.forEach(character => { %>
-        <div class="list">
-            <p><%= character.name %></p>
-        </div>
-        <% }) %>
-    </div>
+    <%- include('partials/header') %>
+    <main>
+        <h2>Tablero de administrador</h2>
+        <div class="dashboard">
+            <% characters.forEach(character => { %>
+                <div class="list">
+                    <p><%= character.id %> - <%= character.name %></p>
+                    <div>
+                        <button>E</button>
+                        <button>X</button>
+                    </div>
+                </div>
+                <% }) %>
+            </div>
+        </main>
+        <%- include('partials/footer') %>
 </body>
 </html>
