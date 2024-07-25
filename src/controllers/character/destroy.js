@@ -8,9 +8,9 @@ module.exports = async (req, res) => {
     try {
         const deleteCharacter = characters.filter(character => character.id !== +req.params.id)
 
-        fs.writeFileSync(characters, JSON.stringify(deleteCharacter, null, 2), 'utf-8')
+        fs.writeFileSync(filePath, JSON.stringify(deleteCharacter, null, 2), 'utf-8')
 
-        return res.render('/')
+        return res.redirect('/');
 
     } catch (error) {
         console.log(error);

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <%- include('partials/head',{
+        title : 'Tierras Magicas',
+      }) %>
+
+<body>
+    <div class="dashboard">
+        <% characters.forEach(character => { %>
+        <div class="list">
+            <p><%= character.name %></p>
+        </div>
+        <% }) %>
+    </div>
+</body>
+</html>

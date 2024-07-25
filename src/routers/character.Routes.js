@@ -1,12 +1,13 @@
 const express = require('express')
-const {add, modify, all, create, edit, detail, destroy} = require('../controllers/characterController')
+const {add, modify, all, create, edit, destroy, realm, admin, } = require('../controllers/characterController')
 const router = express.Router()
 const upload = require('../middleWares/upload')
 
 
-//detalles
+//mostrar
 router.get('/all', all)
-router.get('/detail/:id', detail)
+router.get('/realm/:id', realm )
+router.get('/admin', admin)
 //crear
 router.get('/add', add)
 router.post('/add', upload.single('image'), create)
