@@ -26,7 +26,6 @@ const controller = {
             const realm = realms.find(realm => realm.id === +req.params.id);
     
             const charactersInRealm = characters.filter(character => character.realm === realm.name);
-
     
             return res.render('realmCharacter', {
                 realm,
@@ -39,18 +38,4 @@ const controller = {
 }
 
 module.exports = controller
-
-/* module.exports = async (req, res) => {
-    try {
-        const realms = JSON.parse(fs.readFileSync(filePath, 'utf-8'))
-
-        return res.render('index', {
-            realms
-        })
-
-    } catch (error) {
-        console.log(error);
-    }
-}
- */
 // demonio "https://ts2.mm.bing.net/th?q=tribal%20angel",

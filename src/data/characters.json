@@ -436,7 +436,7 @@
     "name": "Troll",
     "realm": "Reino Orco",
     "element": "Agua",
-    "image": "",
+    "image": "1721949499127_image_.jpg",
     "power": 20,
     "description": "No hay descipcion disponible"
   },
@@ -445,7 +445,7 @@
     "name": "Gladiador",
     "realm": "Reino Orco",
     "element": "Agua",
-    "image": "",
+    "image": "1721949586199_image_.jpg",
     "power": 23,
     "description": "No hay descipcion disponible"
   },
@@ -472,7 +472,7 @@
     "name": "Capitan",
     "realm": "Reino Orco",
     "element": "Agua",
-    "image": "",
+    "image": "1721949396936_image_.jpg",
     "power": 17,
     "description": "No hay descipcion disponible"
   },
@@ -1033,5 +1033,14 @@
     "element": "Aire",
     "description": "No hay descipcion disponible",
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5V_eroUaZ1SW-Hp2HfBSQB8zgeyPS0MQoeaZEbP7QQ2_Wqg9zZz42vLey3Qo-9lpoO8M&usqp=CAU"
+  },
+  {
+    "id": 116,
+    "name": "Aaron",
+    "realm": "Reino Nigromante",
+    "power": 23,
+    "element": "Tierra",
+    "description": "nada",
+    "image": "https://pm1.aminoapps.com/8067/b5b37c0214d72eccd3cfe20bc7ab9af89ced3cd4r1-615-885v2_00.jpg"
   }
 ]

@@ -15,7 +15,6 @@
     text-align: center;
     background-image: url(https://i.pinimg.com/736x/03/f3/d7/03f3d79cb6edd982345dee0efc43d315.jpg);
     background-position-y: center;
-    /* justify-content: space-between; */
 }
 
 .card h2 {
@@ -30,9 +29,10 @@
 }
 
 .card img {
-    /* max-height: 55%;  */
     background-color: white;
     mix-blend-mode: color-burn;
+    /*  height: 60%;
+     max-width: fit-content; */
 }
 
 .card h6 {

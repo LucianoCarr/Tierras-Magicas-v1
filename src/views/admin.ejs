@@ -8,16 +8,60 @@
 <body>
     <%- include('partials/header') %>
     <main>
-        <h2>Tablero de administrador</h2>
+        <h1>Tablero de administrador</h1>
         <div class="dashboard">
             <% characters.forEach(character => { %>
                 <div class="list">
                     <p><%= character.id %> - <%= character.name %></p>
-                    <div>
-                        <button>E</button>
-                        <button>X</button>
+                    <div class="admin-icons">
+                        <a  class="btn btn-success" href="/character/edit/<%= character.id %>"><i class="fa-solid fa-pen"></i></a>
+                        <a type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalDelete<%= character.id %>"><i class="fa-solid fa-trash-can-arrow-up"></i></a>
+                        <a type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#modalInfo<%= character.id %>"><i class="fa-solid fa-eye"></i></a>
                     </div>
                 </div>
+
+                    <!-- Modal Eliminar -->
+    <div class="modal fade" id="modalDelete<%= character.id %>" tabindex="-1" aria-labelledby="modalDeleteLabel<%= character.id %>" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalDeleteLabel<%= character.id %>">Confirmar Eliminación</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ¿Estás seguro de que deseas eliminar al personaje <strong><%= character.name %></strong>?
+                </div>
+                <div class="modal-footer">
+                   <form action="/character/delete/<%= character.id %>?_method=DELETE" method="POST">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                        <button type="submit" class="btn btn-danger">Eliminar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                        <!-- Modal Detalle -->
+    <div class="modal fade" id="modalInfo<%= character.id %>" tabindex="-1" aria-labelledby="modalInfoLabel<%= character.id %>" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content w-50">
+                <div class="card">
+                    <button type="button" class="btn-close align-self-end" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h2><%= character.name %></h2>
+                    <% if (character.image.startsWith('http')) { %>
+                        <img class="w-50 align-self-center" src="<%= character.image %>" alt="<%= character.name %>">
+                    <% } else { %>
+                        <img class="w-50 align-self-center" src="/img/<%= character.image || 'tierras-magicas.jpg' %>" alt="<%= character.name %>">
+                    <% } %>
+                    <h6><%= character.realm %></h6>
+                    <p>Puntos: <%= character.power %></p>
+                    <p>Elemento: <%= character.element %></p>
+                    <p class="card-text">Descripción: <%= character.description %></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
                 <% }) %>
             </div>
         </main>

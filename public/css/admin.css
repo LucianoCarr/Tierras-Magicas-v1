@@ -6,6 +6,18 @@
 .list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     border: 2px solid black;
+    padding: 0px 30px;
+    margin: -2px;
+}
+
+.admin-icons {
+    display: flex;
+    gap: 15px;
+    margin: 3px;
+}
+
+.modal.show .modal-dialog {
+    text-align: -webkit-center;
 }

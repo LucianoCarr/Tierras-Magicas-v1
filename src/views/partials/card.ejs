@@ -2,42 +2,17 @@
     <% characters.forEach(character => { %>
     <div class="card-body">
         <div class="card">
-            <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 16px;">
-                <a  class="btn btn-primary" href="/character/edit/<%= character.id %>">Editar</a>
-                <a type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalDelete<%= character.id %>">Eliminar</a>
-            </div>
             <h2><%= character.name %></h2>
             <% if (character.image.startsWith('http')) { %>
-                <img src="<%= character.image %>" alt="<%= character.name %>">
+                <img class="w-50 align-self-center" src="<%= character.image %>" alt="<%= character.name %>">
             <% } else { %>
-                <img src="/img/<%= character.image || 'tierras-magicas.jpg' %>" alt="<%= character.name %>">
+                <img class="w-50 align-self-center" src="/img/<%= character.image || 'tierras-magicas.jpg' %>" alt="<%= character.name %>">
             <% } %>
             <h6><%= character.realm %></h6>
             <p>Puntos: <%= character.power %></p>
             <p>Elemento: <%= character.element %></p>
             <button class="see-more">Ver más ↓</button>
             <p class="card-text">Descripción: <%= character.description %></p>
-        </div>
-    </div>
-
-    <!-- Modal -->
-    <div class="modal fade" id="modalDelete<%= character.id %>" tabindex="-1" aria-labelledby="modalDeleteLabel<%= character.id %>" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="modalDeleteLabel<%= character.id %>">Confirmar Eliminación</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    ¿Estás seguro de que deseas eliminar al personaje <strong><%= character.name %></strong>?
-                </div>
-                <div class="modal-footer">
-                    <form action="/character/delete/<%= character.id %>?_method=DELETE" method="POST">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                        <button type="submit" class="btn btn-danger">Eliminar</button>
-                    </form>
-                </div>
-            </div>
         </div>
     </div>
     <% }) %>
