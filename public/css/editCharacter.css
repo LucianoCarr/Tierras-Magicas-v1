@@ -7,3 +7,9 @@
     text-align: center;
 }
 
+.img-edit {
+    background-color: white;
+    mix-blend-mode: darken;
+    width: 50%;
+    align-self: center;
+}

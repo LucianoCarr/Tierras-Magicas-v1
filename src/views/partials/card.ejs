@@ -4,9 +4,9 @@
         <div class="card">
             <h2><%= character.name %></h2>
             <% if (character.image.startsWith('http')) { %>
-                <img class="w-50 align-self-center" src="<%= character.image %>" alt="<%= character.name %>">
+                <img class="img-card" src="<%= character.image %>" alt="<%= character.name %>">
             <% } else { %>
-                <img class="w-50 align-self-center" src="/img/<%= character.image || 'tierras-magicas.jpg' %>" alt="<%= character.name %>">
+                <img class="img-card" src="/img/<%= character.image || 'tierras-magicas.jpg' %>" alt="<%= character.name %>">
             <% } %>
             <h6><%= character.realm %></h6>
             <p>Puntos: <%= character.power %></p>

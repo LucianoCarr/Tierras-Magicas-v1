@@ -2,7 +2,7 @@
 @import './header.css';
 @import './index.css';
 @import './card.css';
+@import './admin.css';
 @import './addCharacter.css';
 @import './editCharacter.css';
-@import './allCharacter.css';
-@import './admin.css'
+@import './footer.css';

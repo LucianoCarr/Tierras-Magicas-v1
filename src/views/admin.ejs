@@ -7,9 +7,8 @@
 
 <body>
     <%- include('partials/header') %>
-    <main>
-        <h1>Tablero de administrador</h1>
-        <div class="dashboard">
+    <div class="dashboard">
+            <h1>Tablero de administrador</h1>
             <% characters.forEach(character => { %>
                 <div class="list">
                     <p><%= character.id %> - <%= character.name %></p>
@@ -49,9 +48,9 @@
                     <button type="button" class="btn-close align-self-end" data-bs-dismiss="modal" aria-label="Close"></button>
                     <h2><%= character.name %></h2>
                     <% if (character.image.startsWith('http')) { %>
-                        <img class="w-50 align-self-center" src="<%= character.image %>" alt="<%= character.name %>">
+                        <img class="img-admin" src="<%= character.image %>" alt="<%= character.name %>">
                     <% } else { %>
-                        <img class="w-50 align-self-center" src="/img/<%= character.image || 'tierras-magicas.jpg' %>" alt="<%= character.name %>">
+                        <img class="img-admin" src="/img/<%= character.image || 'tierras-magicas.jpg' %>" alt="<%= character.name %>">
                     <% } %>
                     <h6><%= character.realm %></h6>
                     <p>Puntos: <%= character.power %></p>
@@ -64,7 +63,6 @@
 
                 <% }) %>
             </div>
-        </main>
-        <%- include('partials/footer') %>
+            
 </body>
 </html>

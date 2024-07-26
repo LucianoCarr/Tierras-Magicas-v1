@@ -1,6 +1,6 @@
 .dashboard {
     width: 70%;
-    margin: auto;
+    margin: 1rem auto 1rem;
 }
 
 .list {
@@ -20,4 +20,11 @@
 
 .modal.show .modal-dialog {
     text-align: -webkit-center;
+}
+
+.img-admin {
+    background-color: white;
+    mix-blend-mode: darken;
+    width: 50%;
+    align-self: center;
 }

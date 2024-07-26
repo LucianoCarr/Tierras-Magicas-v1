@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Georgian:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Diplomata+SC&family=Mate+SC&family=Merienda:wght@300..900&display=swap');
 
 * {
@@ -7,18 +6,24 @@
     margin: 0;
 }
 
+h1 {
+    font-family: 'merienda';
+    text-align: center;
+}
+
+main {
+    background-repeat: round;
+    /* background-image: url(../img/starts-transformed.jpeg); */
+    background-image: url(https://w0.peakpx.com/wallpaper/137/52/HD-wallpaper-floral-abstract-on-parchment-widescreen-flowers-black-vines-simple-parchment-abstract.jpg);
+    padding-top: 1rem;
+}
+
 a {
     text-decoration: none;
     color: black;
 }
 
-h1 {
-    text-align: center;
-}
-
 :root {
-    --tipografia: "Noto Serif Georgian", serif;
-    --tipografia2:  "Merienda", cursive;
-    --tipografia3:  "Mate SC", serif;
-    --tipografia4:  "Diplomata SC", serif;
+    --tipografia:  "Mate SC", serif;
+    --tipografia2:  "Diplomata SC", "serif"
 }

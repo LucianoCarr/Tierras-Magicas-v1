@@ -13,12 +13,12 @@
 .card {
     display: flex;
     text-align: center;
-    background-image: url(https://i.pinimg.com/736x/03/f3/d7/03f3d79cb6edd982345dee0efc43d315.jpg);
+    background-image: url(../img/papel_de_pergamino-transformed.jpeg);
     background-position-y: center;
 }
 
 .card h2 {
-    font-family: var(--tipografia2);
+    font-family: 'merienda'
 }
 
 .card hr {
@@ -28,19 +28,33 @@
     margin: 4px;
 }
 
-.card img {
+.img-realm {
     background-color: white;
     mix-blend-mode: color-burn;
     /*  height: 60%;
      max-width: fit-content; */
 }
 
+.img-per-realm {
+    width: 50%;
+    align-self: center;
+    mix-blend-mode: darken;
+}
+
+.img-card {
+    width: 50%;
+    align-self: center;
+    mix-blend-mode: darken;
+}
+
 .card h6 {
-    font-family: var(--tipografia);
+    font-family: 'merienda';
+    font-size: 20px;
 }
 
 .card p {
-    font-family: var(--tipografia3);
+    font-family: 'merienda';
+    font-size: 16px;
 }
 
 .see-more {
