@@ -8,8 +8,7 @@
 }
 
 .img-edit {
-    background-color: white;
+    height: 274px;
+    object-fit: contain;
     mix-blend-mode: darken;
-    width: 50%;
-    align-self: center;
 }

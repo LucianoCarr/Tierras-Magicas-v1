@@ -31,19 +31,17 @@
 .img-realm {
     background-color: white;
     mix-blend-mode: color-burn;
-    /*  height: 60%;
-     max-width: fit-content; */
 }
 
 .img-per-realm {
-    width: 50%;
-    align-self: center;
+    height: 274px;
+    object-fit: contain;
     mix-blend-mode: darken;
 }
 
 .img-card {
-    width: 50%;
-    align-self: center;
+    height: 274px;
+    object-fit: contain;
     mix-blend-mode: darken;
 }
 

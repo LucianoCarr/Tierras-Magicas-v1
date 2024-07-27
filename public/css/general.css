@@ -12,10 +12,11 @@ h1 {
 }
 
 main {
-    background-repeat: round;
-    /* background-image: url(../img/starts-transformed.jpeg); */
-    background-image: url(https://w0.peakpx.com/wallpaper/137/52/HD-wallpaper-floral-abstract-on-parchment-widescreen-flowers-black-vines-simple-parchment-abstract.jpg);
+    background-image: url(https://img.freepik.com/premium-vector/dark-blue-black-vintage-background-royal-with-classic-baroque-pattern-rococo-with-darkened-edges_619989-1320.jpg);
     padding-top: 1rem;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 1rem;
 }
 
 a {

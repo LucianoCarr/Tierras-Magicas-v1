@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <%- include('partials/head',{
+        title : 'Tierras Magicas',
+      }) %>
+      
+<body>
+
+    <%- include('partials/header') %>
+    
+    <h1>Creacion de Reino</h1>
+    <div class="add-view">
+        <form class="add-form" action="/realm/add" method="POST" enctype="multipart/form-data">
+            <div>
+                <!-- nombre -->
+            <div>
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" placeholder="Nombre">
+            </div>
+            <!-- imagen -->
+            <div>
+                <label for="image">URL de la imagen:</label>
+                <input type="text" id="image" name="image" placeholder="URL de la imagen">
+            </div>
+            <div>
+                <label for="formFile">O carga la imagen Aqui</label>
+                <input type="file" id="formFile" name="image">
+            </div>
+            <h3>Asegurate de que tu imagen o URL subida sea ".jpg" ".png" o ".gif"</h3>
+            <div>
+                <button type="submit">Crear Personaje</button>
+            </div>
+        </div>
+    </form>
+</div>
+</body>
+</html>

@@ -63,6 +63,21 @@
 
                 <% }) %>
             </div>
+
+            <div class="dashboard">
+                <h1>Tablero de administrador</h1>
+                <% realms.forEach(realm => { %>
+                    <div class="list">
+                        <p><%= realm.id %> - <%= realm.name %></p>
+                        <div class="admin-icons">
+                            <a  class="btn btn-success" href="/realm/edit/<%= realm.id %>"><i class="fa-solid fa-pen"></i></a>
+                            <a type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalDelete<%= realm.id %>"><i class="fa-solid fa-trash-can-arrow-up"></i></a>
+                            <a type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#modalInfo<%= realm.id %>"><i class="fa-solid fa-eye"></i></a>
+                        </div>
+                    </div>
+
+                    <% }) %>
+                </div>
             
 </body>
 </html>

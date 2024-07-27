@@ -6,10 +6,13 @@
       }) %>
       
 <body>
+
+    <%- include('partials/header') %>
+    
     <h1>Editar Personaje</h1>
     <div class="edit-view">
       <div class="card-body">
-        <div class="card">
+        <div class="card d-flex justify-content-evenly">
           <h2><%= character.name %></h2>
           <% if (character.image.startsWith('http')) { %>
           <img class="img-edit" src="<%= character.image %>" alt="<%= character.name %>" />
