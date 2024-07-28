@@ -17,6 +17,7 @@ main {
     background-size: cover;
     background-position: center;
     padding-bottom: 1rem;
+    min-height: 100vh
 }
 
 a {

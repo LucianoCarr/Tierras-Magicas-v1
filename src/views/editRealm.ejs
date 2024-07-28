@@ -8,9 +8,10 @@
 <body>
 
     <%- include('partials/header') %>
-    
-    <h1>Editar Reino</h1>
-    <div class="edit-view">
+
+<main>
+    <h1 class="title">Editar Reino</h1>
+<div class="edit-view">
       <div class="card-body">
         <div class="card d-flex justify-content-evenly">
           <h2><%= realm.name %></h2>
@@ -23,7 +24,6 @@
       </div>
    
       <form class="edit-form" action="/realm/edit/<%= realm.id %>?_method=PUT" method="POST" enctype="multipart/form-data">
-        <h1>Informacion</h1>
         <div>
             <!-- nombre -->
             <div>
@@ -32,29 +32,30 @@
             </div>
             <!-- imagen -->
             <div>
+                <label for="formFile"></label>
+                <input type="file" id="formFile" name="image">
+            </div>
+            <div>
+                <% if (realm.image.startsWith('http')) { %>
+                    <img src="<%= realm.image %>" alt="<%= realm.name %>" style="max-width: 100px; mix-blend-mode: darken;">
+                    <% } else { %>
+                        <img src="/img/<%= realm.image %>" alt="<%= realm.name %>" style="max-width: 100px; mix-blend-mode: darken;">
+                        <% } %>
+            </div>
+            <div>
                 <label for="image">URL de la imagen:</label>
-                <input type="text" id="image" name="image" placeholder="URL imagen">
+                <input type="text" id="image" name="image">
             </div>
             <div>
                 <label for="defaultImage">Usar imagen por defecto:</label>
                 <input type="checkbox" id="defaultImage" name="defaultImage">
             </div>
             <div>
-                <% if (realm.image.startsWith('http')) { %>
-                    <img src="<%= realm.image %>" alt="<%= realm.name %>" style="max-width: 100px;">
-                    <% } else { %>
-                        <img src="/img/<%= realm.image %>" alt="<%= realm.name %>" style="max-width: 100px;">
-                        <% } %>
-                    </div>
-                    <div>
-                        <label for="formFile"></label>
-                        <input type="file" id="formFile" name="image">
-                    </div>
-            <div>
                 <button type="submit">Editar Reino</button>
             </div>
-        </div>
     </form>
 </div>
+
+</main>
 </body>
 </html>

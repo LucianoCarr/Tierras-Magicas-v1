@@ -9,7 +9,8 @@
 
     <%- include('partials/header') %>
     
-    <h1>Creacion de Reino</h1>
+    <main>
+    <h1 class="title">Creacion de Reino</h1>
     <div class="add-view">
         <form class="add-form" action="/realm/add" method="POST" enctype="multipart/form-data">
             <div>
@@ -21,7 +22,7 @@
             <!-- imagen -->
             <div>
                 <label for="image">URL de la imagen:</label>
-                <input type="text" id="image" name="image" placeholder="URL de la imagen">
+                <input type="text" id="image" name="image">
             </div>
             <div>
                 <label for="formFile">O carga la imagen Aqui</label>
@@ -34,5 +35,6 @@
         </div>
     </form>
 </div>
+</main>
 </body>
 </html>

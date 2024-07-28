@@ -8,8 +8,9 @@
 <body>
 
     <%- include('partials/header') %>
-    
-    <h1>Editar Personaje</h1>
+
+    <main>
+    <h1 class="title">Editar Personaje</h1>
     <div class="edit-view">
       <div class="card-body">
         <div class="card d-flex justify-content-evenly">
@@ -27,8 +28,7 @@
       </div>
    
       <form class="edit-form" action="/character/edit/<%= character.id %>?_method=PUT" method="POST" enctype="multipart/form-data">
-        <h1>Informacion</h1>
-        <div>
+       <div>
             <!-- nombre -->
             <div>
                 <label for="name">Nombre:</label>
@@ -42,44 +42,44 @@
             <!-- poder -->
             <div>
                 <label for="power">Poder:</label>
-                <input type="number" id="power" name="power" value="<%= character.power %>">
+                <input type="text" id="power" name="power" value="<%= character.power %>">
             </div>
             <!-- elemento -->
              <div>
                 <label for="element">Elemento:</label>
                 <select name="element" id="element">
                     <option value="<%= character.element %>" hidden> <%= character.element %> </option>
-                    <option value="Agua">Agua</option>
-                    <option value="Tierra">Tierra</option>
-                    <option value="Fuego">Fuego</option>
-                    <option value="Aire">Aire</option>
+                    <option class="agua" value="Agua">Agua</option>
+                    <option class="tierra" value="Tierra">Tierra</option>
+                    <option class="fuego" value="Fuego">Fuego</option>
+                    <option class="aire" value="Aire">Aire</option>
                 </select>
             </div>
             <!-- descripcion -->
              <div>
                 <label for="description">Descripcion:</label>
                 <br>
-                <textarea name="description" id="description" cols="60" rows="5"><%= character.description %></textarea>
+                <textarea maxlength="150" name="description" id="description" cols="60" rows="5"><%= character.description %></textarea>
             </div>
             <!-- imagen -->
             <div>
-                <label for="image">URL de la imagen:</label>
-                <input type="text" id="image" name="image" placeholder="URL imagen">
-            </div>
-            <div>
-                <label for="defaultImage">Usar imagen por defecto:</label>
-                <input type="checkbox" id="defaultImage" name="defaultImage">
+                <label for="formFile"></label>
+                <input type="file" id="formFile" name="image">
             </div>
             <div>
                 <% if (character.image.startsWith('http')) { %>
-                    <img src="<%= character.image %>" alt="<%= character.name %>" style="max-width: 100px;">
+                    <img src="<%= character.image %>" alt="<%= character.name %>" style="max-width: 50px;">
                     <% } else { %>
-                        <img src="/img/<%= character.image %>" alt="<%= character.name %>" style="max-width: 100px;">
+                        <img src="/img/<%= character.image %>" alt="<%= character.name %>" style="max-width: 50px;">
                         <% } %>
                     </div>
                     <div>
-                        <label for="formFile"></label>
-                        <input type="file" id="formFile" name="image">
+                        <label for="image">URL de la imagen:</label>
+                        <input type="text" id="image" name="image">
+                    </div>
+                    <div>
+                        <label for="defaultImage">Usar imagen por defecto:</label>
+                        <input type="checkbox" id="defaultImage" name="defaultImage">
                     </div>
             <div>
                 <button type="submit">Editar Personaje</button>
@@ -87,5 +87,6 @@
         </div>
     </form>
 </div>
+</main>
 </body>
 </html>

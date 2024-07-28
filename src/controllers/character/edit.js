@@ -31,7 +31,7 @@ module.exports = async (req, res) => {
 
         fs.writeFileSync(filePath, JSON.stringify(editCharacter, null, 2), 'utf-8');
 
-        return res.redirect('/');
+        return res.redirect('/admin');
     } catch (error) {
         console.log("Error al editar el producto:", error);
         res.status(500).send('Internal Server Error');

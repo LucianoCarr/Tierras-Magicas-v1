@@ -4,16 +4,16 @@
     "name": "Guerrero",
     "realm": "Reino de los Dragones",
     "element": "Fuego",
-    "image": "tierras-magicas.jpg",
+    "image": "1722181438848_image_.png",
     "power": 17,
-    "description": "No hay descipcion disponible"
+    "description": "Guerrero entrenado para defenser a su especie y reino. Suelen ser bastante calmados y siempre evaluan la situacion antes de actuar."
   },
   {
     "id": 2,
     "name": "Leyenda",
     "realm": "Reino de los Dragones",
     "element": "Tierra",
-    "image": "tierras-magicas.jpg",
+    "image": "1722181472836_image_.png",
     "power": 26,
     "description": "No hay descipcion disponible"
   },
@@ -22,7 +22,7 @@
     "name": "Bestia",
     "realm": "Reino de los Dragones",
     "element": "Fuego",
-    "image": "https://previews.123rf.com/images/manbeach/manbeach1804/manbeach180400235/98953714-creativa-silueta-ilustraci%C3%B3n-tribal-vector-cabeza-de-tigre-concepto-de-dise%C3%B1o-simple-fauna-animal.jpg",
+    "image": "",
     "power": 19,
     "description": "No hay descipcion disponible"
   },
@@ -31,7 +31,7 @@
     "name": "Guardian",
     "realm": "Reino de los Dragones",
     "element": "Aire",
-    "image": "tierras-magicas.jpg",
+    "image": "1722181489661_image_.png",
     "power": 15,
     "description": "No hay descipcion disponible"
   },
@@ -40,7 +40,7 @@
     "name": "Shaman",
     "realm": "Reino de los Dragones",
     "element": "Agua",
-    "image": "tierras-magicas.jpg",
+    "image": "1722181598270_image_.png",
     "power": 16,
     "description": "No hay descipcion disponible"
   },
@@ -49,7 +49,7 @@
     "name": "Oraculo",
     "realm": "Reino de los Dragones",
     "element": "Agua",
-    "image": "tierras-magicas.jpg",
+    "image": "1722181613220_image_.png",
     "power": 20,
     "description": "No hay descipcion disponible"
   },
@@ -58,7 +58,7 @@
     "name": "Guerrero",
     "realm": "Reino Felino",
     "element": "Agua",
-    "image": "tierras-magicas.jpg",
+    "image": "1722204123752_image_.png",
     "power": 18,
     "description": "No hay descipcion disponible"
   },
@@ -67,7 +67,7 @@
     "name": "Heroe",
     "realm": "Reino Felino",
     "element": "Aire",
-    "image": "tierras-magicas.jpg",
+    "image": "1722204141256_image_.png",
     "power": 26,
     "description": "No hay descipcion disponible"
   },
@@ -76,7 +76,7 @@
     "name": "Bestia",
     "realm": "Reino Felino",
     "element": "Tierra",
-    "image": "tierras-magicas.jpg",
+    "image": "1722204168263_image_.png",
     "power": 20,
     "description": "No hay descipcion disponible"
   },
@@ -85,7 +85,7 @@
     "name": "Explorador",
     "realm": "Reino Felino",
     "element": "Agua",
-    "image": "tierras-magicas.jpg",
+    "image": "1722204277944_image_.png",
     "power": 18,
     "description": "No hay descipcion disponible"
   },
@@ -94,7 +94,7 @@
     "name": "Hechicera",
     "realm": "Reino Felino",
     "element": "Aire",
-    "image": "tierras-magicas.jpg",
+    "image": "1722204301551_image_.png",
     "power": 14,
     "description": "No hay descipcion disponible"
   },
@@ -103,7 +103,7 @@
     "name": "Reina",
     "realm": "Reino Felino",
     "element": "Fuego",
-    "image": "tierras-magicas.jpg",
+    "image": "1722204523000_image_.png",
     "power": 18,
     "description": "No hay descipcion disponible"
   },
@@ -112,7 +112,7 @@
     "name": "Arquero",
     "realm": "Reino Elfo",
     "element": "Agua",
-    "image": "tierras-magicas.jpg",
+    "image": "1722195220286_image_.png",
     "power": 15,
     "description": "No hay descipcion disponible"
   },
@@ -121,7 +121,7 @@
     "name": "Escolta",
     "realm": "Reino Elfo",
     "element": "Agua",
-    "image": "tierras-magicas.jpg",
+    "image": "1722203287192_image_.png",
     "power": 24,
     "description": "No hay descipcion disponible"
   },
@@ -130,7 +130,7 @@
     "name": "Explorador",
     "realm": "Reino Elfo",
     "element": "Agua",
-    "image": "tierras-magicas.jpg",
+    "image": "1722195578642_image_.png",
     "power": 16,
     "description": "No hay descipcion disponible"
   },
@@ -139,7 +139,7 @@
     "name": "Guerrero",
     "realm": "Reino Elfo",
     "element": "Agua",
-    "image": "tierras-magicas.jpg",
+    "image": "1722195593595_image_.png",
     "power": 19,
     "description": "No hay descipcion disponible"
   },
@@ -148,7 +148,7 @@
     "name": "Hechicera",
     "realm": "Reino Elfo",
     "element": "Agua",
-    "image": "tierras-magicas.jpg",
+    "image": "1722195638394_image_.png",
     "power": 17,
     "description": "No hay descipcion disponible"
   },
@@ -157,7 +157,7 @@
     "name": "Reina",
     "realm": "Reino Elfo",
     "element": "Agua",
-    "image": "tierras-magicas.jpg",
+    "image": "1722195648404_image_.png",
     "power": 19,
     "description": "No hay descipcion disponible"
   },
@@ -454,7 +454,7 @@
     "name": "Esclavo",
     "realm": "Reino Orco",
     "element": "Agua",
-    "image": "tierras-magicas.jpg",
+    "image": "1722180387642_image_.png",
     "power": 15,
     "description": "No hay descipcion disponible"
   },
@@ -463,7 +463,7 @@
     "name": "Artillero",
     "realm": "Reino Orco",
     "element": "Agua",
-    "image": "tierras-magicas.jpg",
+    "image": "1722179484052_image_.jpg",
     "power": 12,
     "description": "No hay descipcion disponible"
   },
@@ -481,7 +481,7 @@
     "name": "General",
     "realm": "Reino Orco",
     "element": "Agua",
-    "image": "tierras-magicas.jpg",
+    "image": "1722179536034_image_.png",
     "power": 20,
     "description": "No hay descipcion disponible"
   },
@@ -1051,5 +1051,32 @@
     "element": "Fuego",
     "description": "Es un digimon amarillo que parece dinosaurio,no veas que feo esta",
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTw9dCNgh38BO_H71v5TOTLqvyT3_BRI4Y1IA&s"
+  },
+  {
+    "id": 118,
+    "name": "Agumon",
+    "realm": "Digimon",
+    "power": 30,
+    "element": "Agua",
+    "description": "fdsfdfdfsdfdsfd",
+    "image": "https://static.wikia.nocookie.net/digimon-adventure5140/images/1/17/Tumblr_m1k5j72aC61r1qoefo1_500.gif/revision/latest/scale-to-width-down/250?cb=20161221003441"
+  },
+  {
+    "id": 119,
+    "name": "Agumon",
+    "realm": "Digimon",
+    "power": 30,
+    "element": "Agua",
+    "description": "fdsfdfdfsdfdsfd",
+    "image": "https://static.wikia.nocookie.net/digimon-adventure5140/images/1/17/Tumblr_m1k5j72aC61r1qoefo1_500.gif/revision/latest/scale-to-width-down/250?cb=20161221003441"
+  },
+  {
+    "id": 120,
+    "name": "Agumon",
+    "realm": "Digimon",
+    "power": 30,
+    "element": "Agua",
+    "description": "fdfdfd",
+    "image": "https://cdn.dribbble.com/users/2005975/screenshots/4271122/1.gif"
   }
 ]

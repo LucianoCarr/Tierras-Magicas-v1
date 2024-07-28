@@ -6,12 +6,12 @@ window.onload = function() {
         var cardBody = boton.parentNode;
         var descripcion = cardBody.querySelector('.card-text');
   
-        if (boton.innerHTML === 'Ver más ↓') {
+        if (boton.innerHTML === 'Descripción ↓') {
             descripcion.style.maxHeight = descripcion.scrollHeight + 'px';
             boton.innerHTML = 'Ver menos ↑';
           } else {
             descripcion.style.maxHeight = '0px'; // Ajusta este valor según tu preferencia
-            boton.innerHTML = 'Ver más ↓';
+            boton.innerHTML = 'Descripción ↓';
           }
       });
   

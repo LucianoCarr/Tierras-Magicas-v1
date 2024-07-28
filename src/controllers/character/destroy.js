@@ -10,7 +10,7 @@ module.exports = async (req, res) => {
 
         fs.writeFileSync(filePath, JSON.stringify(deleteCharacter, null, 2), 'utf-8')
 
-        return res.redirect('/');
+        return res.redirect('/admin');
 
     } catch (error) {
         console.log(error);
