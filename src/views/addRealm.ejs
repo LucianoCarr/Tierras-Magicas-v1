@@ -13,24 +13,24 @@
     <h1 class="title">Creacion de Reino</h1>
     <div class="add-view">
         <form class="add-form" action="/realm/add" method="POST" enctype="multipart/form-data">
-            <div>
+            <div style="padding: 10px 0;">
                 <!-- nombre -->
-            <div>
+            <div style="padding: 10px 0;">
                 <label for="name">Nombre:</label>
                 <input type="text" id="name" name="name" placeholder="Nombre">
             </div>
             <!-- imagen -->
-            <div>
+            <div style="padding: 10px 0;">
+                <label for="formFile">Imagen:</label>
+                <input type="file" id="formFile" name="image">
+            </div>
+            <div style="padding: 10px 0;">
                 <label for="image">URL de la imagen:</label>
                 <input type="text" id="image" name="image">
             </div>
-            <div>
-                <label for="formFile">O carga la imagen Aqui</label>
-                <input type="file" id="formFile" name="image">
-            </div>
-            <h3>Asegurate de que tu imagen o URL subida sea ".jpg" ".png" o ".gif"</h3>
-            <div>
-                <button type="submit">Crear Personaje</button>
+            <h3>Asegurate de que tu imagen sea ".jpg" ".png" o ".gif"</h3>
+            <div style="padding: 10px 0;">
+                <button type="submit">Crear Reino</button>
             </div>
         </div>
     </form>

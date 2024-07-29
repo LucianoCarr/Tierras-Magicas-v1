@@ -6,7 +6,7 @@
     "element": "Fuego",
     "image": "1722181438848_image_.png",
     "power": 17,
-    "description": "Guerrero entrenado para defenser a su especie y reino. Suelen ser bastante calmados y siempre evaluan la situacion antes de actuar."
+    "description": "Guerrero entrenado para defender a su especie y reino. Suelen ser bastante calmados y siempre evaluan la situacion antes de actuar."
   },
   {
     "id": 2,
@@ -22,7 +22,7 @@
     "name": "Bestia",
     "realm": "Reino de los Dragones",
     "element": "Fuego",
-    "image": "",
+    "image": "1722181482054_image_.png",
     "power": 19,
     "description": "No hay descipcion disponible"
   },
@@ -67,7 +67,7 @@
     "name": "Heroe",
     "realm": "Reino Felino",
     "element": "Aire",
-    "image": "1722204141256_image_.png",
+    "image": "1722204141222_image_.png",
     "power": 26,
     "description": "No hay descipcion disponible"
   },
@@ -103,7 +103,7 @@
     "name": "Reina",
     "realm": "Reino Felino",
     "element": "Fuego",
-    "image": "1722204523000_image_.png",
+    "image": "1722204522968_image_.png",
     "power": 18,
     "description": "No hay descipcion disponible"
   },
@@ -111,7 +111,7 @@
     "id": 13,
     "name": "Arquero",
     "realm": "Reino Elfo",
-    "element": "Agua",
+    "element": "Aire",
     "image": "1722195220286_image_.png",
     "power": 15,
     "description": "No hay descipcion disponible"
@@ -129,7 +129,7 @@
     "id": 15,
     "name": "Explorador",
     "realm": "Reino Elfo",
-    "element": "Agua",
+    "element": "Aire",
     "image": "1722195578642_image_.png",
     "power": 16,
     "description": "No hay descipcion disponible"
@@ -138,7 +138,7 @@
     "id": 16,
     "name": "Guerrero",
     "realm": "Reino Elfo",
-    "element": "Agua",
+    "element": "Tierra",
     "image": "1722195593595_image_.png",
     "power": 19,
     "description": "No hay descipcion disponible"
@@ -147,7 +147,7 @@
     "id": 17,
     "name": "Hechicera",
     "realm": "Reino Elfo",
-    "element": "Agua",
+    "element": "Tierra",
     "image": "1722195638394_image_.png",
     "power": 17,
     "description": "No hay descipcion disponible"
@@ -156,7 +156,7 @@
     "id": 18,
     "name": "Reina",
     "realm": "Reino Elfo",
-    "element": "Agua",
+    "element": "Fuego",
     "image": "1722195648404_image_.png",
     "power": 19,
     "description": "No hay descipcion disponible"
@@ -165,8 +165,8 @@
     "id": 19,
     "name": "Explorador",
     "realm": "Reino Humano",
-    "element": "Agua",
-    "image": "tierras-magicas.jpg",
+    "element": "Tierra",
+    "image": "1722272628176_image_.png",
     "power": 16,
     "description": "No hay descipcion disponible"
   },
@@ -174,8 +174,8 @@
     "id": 20,
     "name": "Heroe",
     "realm": "Reino Humano",
-    "element": "Agua",
-    "image": "tierras-magicas.jpg",
+    "element": "Fuego",
+    "image": "1722273392247_image_.png",
     "power": 25,
     "description": "No hay descipcion disponible"
   },
@@ -183,8 +183,8 @@
     "id": 21,
     "name": "Hechicera",
     "realm": "Reino Humano",
-    "element": "Agua",
-    "image": "tierras-magicas.jpg",
+    "element": "Tierra",
+    "image": "1722273473365_image_.png",
     "power": 20,
     "description": "No hay descipcion disponible"
   },
@@ -193,7 +193,7 @@
     "name": "Guardian",
     "realm": "Reino Humano",
     "element": "Agua",
-    "image": "tierras-magicas.jpg",
+    "image": "1722273615231_image_.png",
     "power": 18,
     "description": "No hay descipcion disponible"
   },
@@ -201,8 +201,8 @@
     "id": 23,
     "name": "Guerrero",
     "realm": "Reino Humano",
-    "element": "Agua",
-    "image": "tierras-magicas.jpg",
+    "element": "Fuego",
+    "image": "1722273582028_image_.png",
     "power": 17,
     "description": "No hay descipcion disponible"
   },
@@ -210,8 +210,8 @@
     "id": 24,
     "name": "Paladin",
     "realm": "Reino Humano",
-    "element": "Agua",
-    "image": "tierras-magicas.jpg",
+    "element": "Aire",
+    "image": "1722273545547_image_.png",
     "power": 22,
     "description": "No hay descipcion disponible"
   },
@@ -219,8 +219,8 @@
     "id": 25,
     "name": "Gargola",
     "realm": "Reino del mas alla",
-    "element": "Agua",
-    "image": "tierras-magicas.jpg",
+    "element": "Fuego",
+    "image": "1722274446395_image_.png",
     "power": 20,
     "description": "No hay descipcion disponible"
   },
@@ -228,8 +228,8 @@
     "id": 26,
     "name": "vampiro",
     "realm": "Reino del mas alla",
-    "element": "Agua",
-    "image": "tierras-magicas.jpg",
+    "element": "Aire",
+    "image": "1722274262794_image_.png",
     "power": 24,
     "description": "No hay descipcion disponible"
   },
@@ -238,7 +238,7 @@
     "name": "Esqueleto",
     "realm": "Reino del mas alla",
     "element": "Agua",
-    "image": "tierras-magicas.jpg",
+    "image": "1722274140539_image_.png",
     "power": 14,
     "description": "No hay descipcion disponible"
   },
@@ -246,8 +246,8 @@
     "id": 28,
     "name": "Zombie",
     "realm": "Reino del mas alla",
-    "element": "Agua",
-    "image": "tierras-magicas.jpg",
+    "element": "Tierra",
+    "image": "1722274165763_image_.png",
     "power": 19,
     "description": "No hay descipcion disponible"
   },
@@ -255,8 +255,8 @@
     "id": 29,
     "name": "Fantasma",
     "realm": "Reino del mas alla",
-    "element": "Agua",
-    "image": "tierras-magicas.jpg",
+    "element": "Aire",
+    "image": "1722274468860_image_.png",
     "power": 12,
     "description": "No hay descipcion disponible"
   },
@@ -264,8 +264,8 @@
     "id": 30,
     "name": "Espectro",
     "realm": "Reino del mas alla",
-    "element": "Agua",
-    "image": "tierras-magicas.jpg",
+    "element": "Fuego",
+    "image": "1722274219114_image_.png",
     "power": 22,
     "description": "No hay descipcion disponible"
   },
@@ -273,8 +273,8 @@
     "id": 31,
     "name": "Cangrejo",
     "realm": "Reino del Agua",
-    "element": "Agua",
-    "image": "tierras-magicas.jpg",
+    "element": "Aire",
+    "image": "1722275089234_image_.png",
     "power": 18,
     "description": "No hay descipcion disponible"
   },
@@ -283,7 +283,7 @@
     "name": "Leviatan",
     "realm": "Reino del Agua",
     "element": "Agua",
-    "image": "tierras-magicas.jpg",
+    "image": "1722274970307_image_.png",
     "power": 23,
     "description": "No hay descipcion disponible"
   },
@@ -291,8 +291,8 @@
     "id": 33,
     "name": "Kraken",
     "realm": "Reino del Agua",
-    "element": "Agua",
-    "image": "tierras-magicas.jpg",
+    "element": "Tierra",
+    "image": "1722275041970_image_.png",
     "power": 18,
     "description": "No hay descipcion disponible"
   },
@@ -301,7 +301,7 @@
     "name": "Triton",
     "realm": "Reino del Agua",
     "element": "Agua",
-    "image": "tierras-magicas.jpg",
+    "image": "1722275075690_image_.png",
     "power": 14,
     "description": "No hay descipcion disponible"
   },
@@ -309,8 +309,8 @@
     "id": 35,
     "name": "Sirena",
     "realm": "Reino del Agua",
-    "element": "Agua",
-    "image": "tierras-magicas.jpg",
+    "element": "Aire",
+    "image": "1722274993091_image_.png",
     "power": 17,
     "description": "No hay descipcion disponible"
   },
@@ -318,8 +318,8 @@
     "id": 36,
     "name": "Reina Sirena",
     "realm": "Reino del Agua",
-    "element": "Agua",
-    "image": "tierras-magicas.jpg",
+    "element": "Fuego",
+    "image": "1722275056578_image_.png",
     "power": 20,
     "description": "No hay descipcion disponible"
   },
@@ -328,7 +328,7 @@
     "name": "Pegaso",
     "realm": "Reino del Aire",
     "element": "Agua",
-    "image": "tierras-magicas.jpg",
+    "image": "1722275557431_image_.png",
     "power": 17,
     "description": "No hay descipcion disponible"
   },
@@ -336,8 +336,8 @@
     "id": 38,
     "name": "Unicornio Alado",
     "realm": "Reino del Aire",
-    "element": "Agua",
-    "image": "tierras-magicas.jpg",
+    "element": "Aire",
+    "image": "1722275435706_image_.png",
     "power": 24,
     "description": "No hay descipcion disponible"
   },
@@ -345,8 +345,8 @@
     "id": 39,
     "name": "Grifo",
     "realm": "Reino del Aire",
-    "element": "Agua",
-    "image": "tierras-magicas.jpg",
+    "element": "Tierra",
+    "image": "1722275592208_image_.png",
     "power": 15,
     "description": "No hay descipcion disponible"
   },
@@ -354,8 +354,8 @@
     "id": 40,
     "name": "Ave Fenix",
     "realm": "Reino del Aire",
-    "element": "Agua",
-    "image": "tierras-magicas.jpg",
+    "element": "Fuego",
+    "image": "1722275451921_image_.png",
     "power": 21,
     "description": "No hay descipcion disponible"
   },
@@ -363,8 +363,8 @@
     "id": 41,
     "name": "Arpia",
     "realm": "Reino del Aire",
-    "element": "Agua",
-    "image": "tierras-magicas.jpg",
+    "element": "Tierra",
+    "image": "1722275489833_image_.png",
     "power": 14,
     "description": "No hay descipcion disponible"
   },
@@ -372,8 +372,8 @@
     "id": 42,
     "name": "Reina Arpia",
     "realm": "Reino del Aire",
-    "element": "Agua",
-    "image": "tierras-magicas.jpg",
+    "element": "Aire",
+    "image": "1722275579530_image_.png",
     "power": 19,
     "description": "No hay descipcion disponible"
   },
@@ -381,8 +381,8 @@
     "id": 43,
     "name": "Obrero",
     "realm": "Reino Insecto",
-    "element": "Agua",
-    "image": "tierras-magicas.jpg",
+    "element": "Fuego",
+    "image": "1722277371575_image_.png",
     "power": 12,
     "description": "No hay descipcion disponible"
   },
@@ -390,8 +390,8 @@
     "id": 44,
     "name": "Campeon",
     "realm": "Reino Insecto",
-    "element": "Agua",
-    "image": "tierras-magicas.jpg",
+    "element": "Tierra",
+    "image": "1722277248632_image_.png",
     "power": 23,
     "description": "No hay descipcion disponible"
   },
@@ -399,8 +399,8 @@
     "id": 45,
     "name": "Guardian",
     "realm": "Reino Insecto",
-    "element": "Agua",
-    "image": "tierras-magicas.jpg",
+    "element": "Fuego",
+    "image": "1722277384991_image_.png",
     "power": 17,
     "description": "No hay descipcion disponible"
   },
@@ -408,8 +408,8 @@
     "id": 46,
     "name": "Reina",
     "realm": "Reino Insecto",
-    "element": "Agua",
-    "image": "tierras-magicas.jpg",
+    "element": "Tierra",
+    "image": "1722276094560_image_.png",
     "power": 19,
     "description": "No hay descipcion disponible"
   },
@@ -417,8 +417,8 @@
     "id": 47,
     "name": "Guerrero",
     "realm": "Reino Insecto",
-    "element": "Agua",
-    "image": "tierras-magicas.jpg",
+    "element": "Aire",
+    "image": "1722277407326_image_.png",
     "power": 15,
     "description": "No hay descipcion disponible"
   },
@@ -427,7 +427,7 @@
     "name": "Espia",
     "realm": "Reino Insecto",
     "element": "Agua",
-    "image": "tierras-magicas.jpg",
+    "image": "1722277417422_image_.png",
     "power": 19,
     "description": "No hay descipcion disponible"
   },
@@ -435,7 +435,7 @@
     "id": 49,
     "name": "Troll",
     "realm": "Reino Orco",
-    "element": "Agua",
+    "element": "Tierra",
     "image": "1721949499127_image_.jpg",
     "power": 20,
     "description": "No hay descipcion disponible"
@@ -444,7 +444,7 @@
     "id": 50,
     "name": "Gladiador",
     "realm": "Reino Orco",
-    "element": "Agua",
+    "element": "Fuego",
     "image": "1721949586199_image_.jpg",
     "power": 23,
     "description": "No hay descipcion disponible"
@@ -453,7 +453,7 @@
     "id": 51,
     "name": "Esclavo",
     "realm": "Reino Orco",
-    "element": "Agua",
+    "element": "Tierra",
     "image": "1722180387642_image_.png",
     "power": 15,
     "description": "No hay descipcion disponible"
@@ -462,7 +462,7 @@
     "id": 52,
     "name": "Artillero",
     "realm": "Reino Orco",
-    "element": "Agua",
+    "element": "Fuego",
     "image": "1722179484052_image_.jpg",
     "power": 12,
     "description": "No hay descipcion disponible"
@@ -480,7 +480,7 @@
     "id": 54,
     "name": "General",
     "realm": "Reino Orco",
-    "element": "Agua",
+    "element": "Aire",
     "image": "1722179536034_image_.png",
     "power": 20,
     "description": "No hay descipcion disponible"

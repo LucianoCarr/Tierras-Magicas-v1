@@ -29,7 +29,7 @@
           </h2>
         <div id="collapse<%= realm.id %>" class="accordion-collapse collapse" aria-labelledby="heading<%= realm.id %>" data-bs-parent="#realmsAccordion">
             <div class="accordion-body">
-              <h3>Personajes en <%= realm.name %></h3>
+              <h3>Personajes del <%= realm.name %></h3>
               <% characters.filter(character => character.realm === realm.name).forEach(character => { %>
                 <div class="list">
                   <p><%= character.id %> - <%= character.name %></p>

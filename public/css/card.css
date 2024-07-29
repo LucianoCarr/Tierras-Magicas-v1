@@ -8,6 +8,7 @@
     flex-wrap: wrap;
     max-width: 25%;
     padding: 14px;
+    justify-content: center;
 }
 
 .card {

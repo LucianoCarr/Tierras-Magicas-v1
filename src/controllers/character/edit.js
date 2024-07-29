@@ -18,7 +18,7 @@ module.exports = async (req, res) => {
                 character.description = description.trim() || "No hay descipcion disponible";
 
                 if (character.image) {
-                    character.image = "";
+                    character.image = character.image;
                 }
                 if (req.file) {
                     character.image = req.file.filename;

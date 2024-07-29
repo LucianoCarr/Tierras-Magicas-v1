@@ -13,15 +13,20 @@
 
 .edit-form label {
     font-weight: bold;
+    font-family: "merienda";
 }
 
 .edit-form div {
-    padding: 2px 0;
+    padding: 6px 0;
 }
 
 .edit-form div input,select,textarea {
     background: center;
     text-align: center;
+}
+
+.edit-form div input:focus,textarea:focus, select:focus {
+    background-color: white;
 }
 
 .edit-form textarea {
@@ -35,11 +40,17 @@
     mix-blend-mode: darken;
 }
 
-/* .edit-form button {
-    border: none;
-    border-radius: 25%;
-    padding: 4px 0;
-} */
+.nameCharacter {
+    width: 30%;
+}
+
+#power {
+    width: 10%;
+}
+
+.edit-form div button {
+    margin-top: 8px;
+}
 
 .edit-form button {
 	background-image: linear-gradient(to right, aqua 30%, blue 100%);

@@ -17,7 +17,7 @@
                 <!-- nombre -->
             <div>
                 <label for="name">Nombre:</label>
-                <input type="text" id="name" name="name" placeholder="Nombre">
+                <input class="nameCharacterAdd" type="text" id="name" name="name" placeholder="Nombre">
             </div>
             <!-- reino -->
             <div>
@@ -33,10 +33,10 @@
              <div>
                  <label for="element">Elemento:</label>
                  <select name="element" id="element">
-                     <option value="Agua">Agua</option>
-                     <option value="Tierra">Tierra</option>
-                    <option value="Fuego">Fuego</option>
-                    <option value="Aire">Aire</option>
+                    <option class="agua" value="Agua">Agua</option>
+                    <option class="tierra" value="Tierra">Tierra</option>
+                    <option class="fuego" value="Fuego">Fuego</option>
+                    <option class="aire" value="Aire">Aire</option>
                 </select>
             </div>
             <!-- descripcion -->
@@ -47,14 +47,14 @@
             </div>
             <!-- imagen -->
             <div>
+                <label for="formFile">Imagen:</label>
+                <input type="file" id="formFile" name="image">
+            </div>
+            <div>
                 <label for="image">URL de la imagen:</label>
                 <input type="text" id="image" name="image">
             </div>
-            <div>
-                <label for="formFile">O carga la imagen Aqui</label>
-                <input type="file" id="formFile" name="image">
-            </div>
-            <h3>Asegurate de que tu imagen o URL subida sea ".jpg" ".png" o ".gif"</h3>
+            <h3>Asegurate de que tu imagen sea ".jpg" ".png" o ".gif"</h3>
             <div>
                 <button type="submit">Crear Personaje</button>
             </div>

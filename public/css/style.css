@@ -3,6 +3,6 @@
 @import './index.css';
 @import './card.css';
 @import './admin.css';
-@import './addCharacter.css';
-@import './editCharacter.css';
+@import './add.css';
+@import './edit.css';
 @import './footer.css';

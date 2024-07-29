@@ -9,14 +9,15 @@
 
     <%- include('partials/header') %>
 
-    <main>
+<main>
     <h1 class="title">Editar Personaje</h1>
     <div class="edit-view">
-      <div class="card-body">
-        <div class="card d-flex justify-content-evenly">
+        <div class="card-body">
+            <h1 class="title"><a href="/admin">Volver</a></h1>
+            <div class="card d-flex justify-content-evenly">
           <h2><%= character.name %></h2>
           <% if (character.image.startsWith('http')) { %>
-          <img class="img-edit" src="<%= character.image %>" alt="<%= character.name %>" />
+          <img class="img-edit" src="<%= character.image %>" alt="<%= character.name %>"/>
           <% } else { %>
           <img class="img-edit" src="/img/<%= character.image || 'tierras-magicas.jpg' %>" alt="<%= character.name %>"/>
           <% } %>
@@ -32,7 +33,7 @@
             <!-- nombre -->
             <div>
                 <label for="name">Nombre:</label>
-                <input type="text" id="name" name="name" value="<%= character.name %>">
+                <input class="nameCharacter" type="text" id="name" name="name" value="<%= character.name %>">
             </div>
             <!-- reino -->
             <div>
