@@ -15,7 +15,7 @@
       <div class="card-body">
         <h1 class="title"><a href="/admin">Volver</a></h1>
         <div class="card d-flex justify-content-evenly">
-          <h2><%= realm.name %></h2>
+          <h2>Reino <%= realm.name %></h2>
           <% if (realm.image.startsWith('http')) { %>
           <img class="img-edit" src="<%= realm.image %>" alt="<%= realm.name %>"/>
           <% } else { %>
@@ -28,7 +28,7 @@
         <div>
             <!-- nombre -->
             <div style="padding: 10px 0;">
-                <label for="name">Nombre:</label>
+                <label for="name">Reino:</label>
                 <input type="text" id="name" name="name" value="<%= realm.name %>">
             </div>
             <!-- imagen -->

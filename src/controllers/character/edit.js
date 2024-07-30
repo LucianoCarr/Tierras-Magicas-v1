@@ -9,6 +9,7 @@ module.exports = async (req, res) => {
         const { name, image, realm, element, power, description } = req.body;
 
         const editCharacter = characters.map(character => {
+            
             if (character.id === +req.params.id) {
                 character.name = name.trim();
                 character.image = req.file ? req.file.filename : character.image
@@ -20,6 +21,7 @@ module.exports = async (req, res) => {
                 if (character.image) {
                     character.image = character.image;
                 }
+                
                 if (req.file) {
                     character.image = req.file.filename;
                 } else if (image && (image.startsWith('http://') || image.startsWith('https://'))) {
